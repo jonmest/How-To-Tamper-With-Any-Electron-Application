@@ -23,3 +23,5 @@ When you visit this subdirectory you will face two possible scenarios:
 If you end up facing an asar-file, you should know it's just Electron's format for archiving files together in a `tar`-like way. Files within the archive can be accessed by Electron individually at will. The source code is located in the archive, and it's just a matter of unpacking it:
 
 `npx asar extract app.asar folder_for_unpacked `
+
+You now have access to the source code in `/folder_for_unpacked`. The interesting part, is that you can now make tiny changes to the source code, pack it back into an .asar archive and replace the old `app.asar` with it.
