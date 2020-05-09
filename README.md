@@ -24,4 +24,4 @@ If you end up facing an asar-file, you should know it's just Electron's format f
 
 `npx asar extract app.asar folder_for_unpacked `
 
-You now have access to the source code in `/folder_for_unpacked`. The interesting part, is that you can now make tiny changes to the source code, pack it back into an .asar archive and replace the old `app.asar` with it.
+You now have access to the source code in `/folder_for_unpacked`. The interesting part, is that you can now make tiny changes to the source code, pack it back into an .asar archive and replace the old `app.asar` with it. And when you run the application again, it will work just like normal -- if you haven't introduced any breaking code.
