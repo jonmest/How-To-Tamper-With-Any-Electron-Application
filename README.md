@@ -32,3 +32,4 @@ The problem is that, as far as I know, there is currently no standard way of ver
 
 For example, I was able to unpack the source code for the excellent Signal messaging app, modify it to fetch all plaintext messages in the client's decrypted SQLite-database, and post them to a server in my control, pack it back and replace the original `app.asar` with it. No user would possibly notice it, unless they were overwatching the network traffic for abnormal activies:
 
+Signal does things right by installing the application as root, leaving only superusers with write privileges. However, not all Electron-based applications do this, and even then, they are *all* possibly vulnerable MITM-attacks where someone intercepts the download of an application with their own, tampered-with version.
