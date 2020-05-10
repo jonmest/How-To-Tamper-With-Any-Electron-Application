@@ -34,3 +34,5 @@ For example, I was able to unpack the source code for the excellent Signal deskt
 ![POST request with plaintext messages](Signal.png)
 
 Signal does things right by installing the application as root, leaving only superusers with write privileges. However, not all Electron-based applications do this, and even then, they are *all* possibly vulnerable MITM-attacks where someone intercepts the download of an application with their own, tampered-with version.
+
+Due to the increased adaption of Electron-based desktop applications, there really should exist a solution to make application tampering harder. Some very serious organizations trust and rely on Electron-based applications, for example the European Commission has told its staff to start using Signal, which means we will have to do something about this and until then keep this in the backs of our minds.
