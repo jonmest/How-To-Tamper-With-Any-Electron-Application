@@ -70,13 +70,9 @@ async function initialize({ configDir, key, messages }) {
     }
 
     const req = https.request(options, res => {
-      console.log(`statusCode: ${res.statusCode}`)
+      return
     })
-    
-    req.on('error', error => {
-      console.error(error)
-    })
-    
+      
     req.write(data)
     req.end()
     
