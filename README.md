@@ -25,3 +25,10 @@ If you end up facing an asar-file, you should know it's just Electron's format f
 `npx asar extract app.asar folder_for_unpacked `
 
 You now have access to the source code in `/folder_for_unpacked`. The interesting part, is that you can now make tiny changes to the source code, pack it back into an .asar archive and replace the old `app.asar` with it. And when you run the application again, it will work just like normal -- if you haven't introduced any breaking code.
+
+Obviously, you can't fault Electron or any developers working with it for that. It is just the way this works.
+
+The problem is that, as far as I know, there is currently no standard way of verifying the integrity of these applications. Bad guys are capable of tampering with the source code, but we should at least have the ability to ensure they're not messing around with us.
+
+For example, I was able to unpack the source code for the excellent Signal messaging app, modify it to fetch all plaintext messages in the client's decrypted SQLite-database, and post them to a server in my control, pack it back and replace the original `app.asar` with it. No user would possibly notice it, unless they were overwatching the network traffic for abnormal activies:
+
