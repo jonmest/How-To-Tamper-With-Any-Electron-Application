@@ -1,3 +1,4 @@
+Note: I see quite a lot of people still visiting this repo. Note that I haven't kept up-to-date on Electron lately and some things may be outdated.
 # Reverse Engineering & Tampering With Electron Apps
 ## ... and having an easy time doing it!
 
